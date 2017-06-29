@@ -15,12 +15,12 @@
       
         $.ajax({
             type: "POST",
-            dataType: "jsonp",
+//            dataType: "jsonp",
             url:  "<?php echo site_url(); ?>/test/check_ajax",
             //data: "id" + id,
             success: function (msg) {
                 alert(msg);
-                //$('#ajax_work').html(msg);
+                $('#ajax_work').html(msg);
             }
         });
 
